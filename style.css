@@ -1,5 +1,79 @@
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+/* 1. Center the header */
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+/* 2. Center the navigation links */
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* 3. Style the navigation links */
+nav a {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #ccc; /* light gray */
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #999; /* darker gray on hover */
+  color: white;
+}
+
+/* 4. Center the main image */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. Style the image caption */
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* 6. Style the text block in #featured-property */
+#featured-property p {
+  width: 800px;
+  margin: 15px auto;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 7. Make #details section horizontal */
+#details {
+  margin-top: 40px;
+  overflow: hidden; /* contain floated children */
+}
+
+/* 8. Style each detail box */
+#details div {
+  float: left;
+  width: 25%;
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-right: 1px solid #ccc;
+}
+
+/* Optional: Remove right border from last div to make it cleaner */
+#details div:last-child {
+  border-right: none;
 }
